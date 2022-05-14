@@ -1,4 +1,7 @@
 <h1>Hello World!</h1>
+Nice to meet you, I'm Christopher C., but you can just call me Chris.  I'm the creator of Steampocalypse 1909, a boardgame developed, protoyped and produced in a litteral garrage. Over the past ten years I've been employed with the State of Oregon and the Texas Office of the Attorney General. Currently, I'm undergoing training as a full stack developer.
+
+![logo b 3 - 2018](https://user-images.githubusercontent.com/104176743/168447234-c1403104-ef8d-4a4c-92bd-4550aa4e5715.png)
 
 
 <!--

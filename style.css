@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One';
+}
+
+
+.nav1{
+    display: flex;
+    width: auto;
+    height: 150px;
+    background-color: #8c9491;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+.alrt{
+    width: auto;
+    height: auto;
+    position: fixed 5%;
+    font-size: xx-large;
+}
+
+.logo{
+    display: flex;
+    margin: auto;
+    margin-bottom: 15px;
+    height: 200px;
+    width: 900px;
+}
+
+.textW{
+    color: rgb(253, 247, 238);
+}
+
+.color-manatee{
+    background-color: #8C8C9C;
+    color: #2A2F33;
+}
+
+li{
+    margin-right: 15px;
+}
+
+.bac{
+    background-color: #971f33;
+    color: #2f2426;
+    display: flex;
+    justify-content:    center;
+    align-items: center;
+    margin: auto;
+    height: 75px;
+}
+
+.faction-bar{
+    width:1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.faction-logo{
+    width: 70px;
+}
+
+.card{
+    width: 220px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.card-container{
+    width: 900;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    padding-right: 15px;
+}
+td:last-child{
+    padding-right: 0px;
+}

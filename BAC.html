@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stempocalypse 1909</title>
+    <title>Stempocalypse 1909 - BAC</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,19 +44,34 @@
         </nav>
     </div>
     <!-- End of Nav -->
-    <div class="logo d-flex justify-content-center">
-        <img src="Assets/main_logo.png" alt="Logo" class="logo p-7">
+    <div class="bac">
+        <div class="faction-bar">
+            <img src="Assets/Bac.png" alt="BAC" class="faction-logo" >
+            <span>
+
+                <h2>British American Colonies</h2>
+            </span>
+        </div>
     </div>
-    <div class="main d-flex justify-content-center">
-        <a href="BAC.html">
-            <img src="Assets/Bac_Main.PNG" alt="BAC" class="p-1">
-        </a>
-        <img src="Assets/UAT_Main.PNG" alt="UAT" class="p-1">
-        <img src="Assets/MRC_Main.PNG" alt="MRC" class="p-1">
-        <img src="Assets/LOD_Main.PNG" alt="LOD" class="p-1">        
-        <img src="Assets/EOC_Main.PNG" alt="EOC" class="p-1">
-        <img src="Assets/ROC_Main.PNG" alt="ROC" class="p-1">
+    <table class="card-container">
+        <tr>
+            <td><img src="Assets/Bac/BAC_MAJ_Fairbanks_Card.JPG"  alt="MAJ Fairbanks" class="card" id="myImg" ></td>
+            <td><img src="Assets/Bac/BAC Cpt Loveless Card.JPG"   alt="CPT Loveless" class="card" id="myImg">
+            <td><img src="Assets/Bac/BAC_CPT_Brookwater.jpg" alt="Combat Engeneer" class="card" ></td>
+            <td><img src="Assets/Bac/BAC Combat Engeneers Card.JPG" alt="Combat Engeneer" class="card" ></td>
+        </tr>
+        <tr>
+            <td><img src="Assets/BAC/BAC Conscript.png" alt="Conscript" class="card" ></td>
+            <td><img src="Assets/BAC/BAC Shield Warden.png" alt="Shield Warden" class="card" ></td>
+            <td><img src="Assets/BAC/BAC Trench Gunner.png" alt="Trench Gunner" class="card" ></td>
+        </tr>
+        <div id="myModal" class="modal1">
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            <img class="modal-content"  id="img01">
+        </div>
+        </table>
     </div>
+
     <div class="comments d-flex justify-content-center">
         <h3>Choose your faction and fight!</h3>
     </div>

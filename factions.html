@@ -48,17 +48,47 @@
         <img src="Assets/main_logo.png" alt="Logo" class="logo p-7">
     </div>
     <div class="main d-flex justify-content-center">
-        <a href="BAC.html">
-            <img src="Assets/Bac_Main.PNG" alt="BAC" class="p-1">
-        </a>
-        <img src="Assets/UAT_Main.PNG" alt="UAT" class="p-1">
-        <img src="Assets/MRC_Main.PNG" alt="MRC" class="p-1">
-        <img src="Assets/LOD_Main.PNG" alt="LOD" class="p-1">        
-        <img src="Assets/EOC_Main.PNG" alt="EOC" class="p-1">
-        <img src="Assets/ROC_Main.PNG" alt="ROC" class="p-1">
+        <div class="btn-group border-none" width="900px">
+            <button type="button" class="btn btn-outline-primary" onclick="displayFaction('BAC')">
+                <img src="Assets/Bac.png" alt="BAC" class="faction-logo-l">
+            </button>
+            <button type="button" class="btn btn-outline-primary" onclick="displayFaction('UAT')">
+                <img src="Assets/UAT.png" alt="UAT" class="faction-logo-l">
+            </button>
+            <button type="button" class="btn btn-outline-primary" onclick="displayFaction('MRC')">
+                <img src="Assets/mrc.png" alt="MRC" class="faction-logo-l">
+            </button>
+            <button type="button" class="btn btn-outline-primary">
+                <img src="Assets/LOD.png" alt="LOD" class="faction-logo-l">
+            </button>
+            <button type="button" class="btn btn-outline-primary">
+                <img src="Assets/Spinish.PNG" alt="EOC" class="faction-logo-l">
+            </button>
+            <button type="button" class="btn btn-outline-primary">
+                <img src="Assets/RoC.png" alt="ROC" class="faction-logo-l">
+            </button>
+        </div>
     </div>
     <div class="comments d-flex justify-content-center">
-        <h3>Choose your faction and fight!</h3>
+        <div class="faction-text bac" id="BAC">
+            <div class="textBox">
+                <h4>British American Colonies</h4>
+                <p>When the rift open and disrupted the war with the rebels, the British consolidated in the industrialized north. With factories and 
+                    plentiful resources the grew the machines of war.</p>
+                <p>Specializing in heavy arms and armor, the British can dig and fortify any posistion.</p>
+
+            </div>
+
+        </div>
+
+        <div class="faction-text uat" id="UAT">
+            <h4>Choose your faction and fight!</h4>
+
+        </div>
+        <div class="faction-text mrc" id="MRC">
+            <h4>Choose your faction and fight!</h4>
+
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="script.js"></script>

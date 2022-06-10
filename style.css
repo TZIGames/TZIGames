@@ -43,7 +43,7 @@ li{
 }
 
 .bac{
-    background-color: #971f33;
+    background-color: rgb(151, 31, 51, 0.7);
     color: #2f2426;
     display: flex;
     justify-content:    center;
@@ -65,6 +65,35 @@ li{
 .mrc{
     background-color: #a594c9;
     color: #5c5b5c;
+    display: flex;
+    justify-content:    center;
+    align-items: center;
+    margin: auto;
+    height: 75px;
+}
+
+.lod{
+    background-color: #d55d39;
+    color: #322e31;
+    display: flex;
+    justify-content:    center;
+    align-items: center;
+    margin: auto;
+    height: 75px;
+}
+.eoc{
+    background-color: #ae9e53;
+    color: #424241;
+    display: flex;
+    justify-content:    center;
+    align-items: center;
+    margin: auto;
+    height: 75px;
+}
+
+.roc{
+    background-color: #9bc6a3;
+    color: #5a504a;
     display: flex;
     justify-content:    center;
     align-items: center;
@@ -108,7 +137,7 @@ li{
     animation: fadeIn .5s;
 }
 
-
+/* card pictures */
 .card{
     width: 220px;
     margin: auto;
@@ -119,9 +148,21 @@ li{
 .card:hover{
     filter: brightness(120%);
     transition: .5s ease;
-
 }
 
+/* Model images */
+
+.model_img{
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background-color: none;
+}
+.model_imgrd:hover{
+    filter: brightness(120%);
+    transition: .5s ease;
+}
 .p-1:hover{
     transform:scale(1.2);
     transition: .5s ease;
@@ -130,7 +171,7 @@ li{
 
 
 
-/* The Modal background */
+/* modal for cards */
 .modal1 {
     width: 600px !important; 
     height: 775px !important; 
@@ -146,10 +187,46 @@ li{
     -ms-transform:translateY(-50%);
     -o-transform:translateY(-50%);
     transform:translateY(-50%);
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.9); 
 }
 
-/* Modal Content (Image) */
+/* modal for models */
+.modal2 {
+    width: 600px !important; 
+    height: 600px !important; 
+    display: none; 
+    z-index: 1; 
+    margin:0 auto;
+    position: fixed;
+    left: 0;
+    right:0;
+    top: 70%; 
+    -webkit-transform:translateY(-70%);
+    -moz-transform:translateY(-70%);
+    -ms-transform:translateY(-70%);
+    -o-transform:translateY(-70%);
+    transform:translateY(-70%);
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.modal3 {
+    width: 600px !important; 
+    height: 600px !important; 
+    display: none; 
+    z-index: 1; 
+    margin:0 auto;
+    position: fixed;
+    left: 0;
+    right:0;
+    top: 70%; 
+    -webkit-transform:translateY(-70%);
+    -moz-transform:translateY(-70%);
+    -ms-transform:translateY(-70%);
+    -o-transform:translateY(-70%);
+    transform:translateY(-70%);
+    background-color: rgba(0,0,0,0.9); 
+}
+
 .modal-content {
     display: flex;
     margin: auto;
@@ -160,19 +237,7 @@ li{
     max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
 
-/* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
@@ -180,15 +245,6 @@ li{
     animation-duration: 0.6s;
 }
 
-/* @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-} */
 
 /* The Close Button */
 .close {
@@ -225,4 +281,10 @@ td:last-child{
 
 .stest{
     color: rgb(34, 16, 5)
+}
+
+.image_table{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
 }

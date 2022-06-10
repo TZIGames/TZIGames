@@ -10,39 +10,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
-    <body>
-        <div class="alert alert-primary d-lg-none alrt" role="alert">
-            This website has been optomised for larger screens
-        </div>
-        <nav class="navbar navbar-expand-lg nav-fill bg-light">
-            <div class="container-fluid nav-fill nav1 textW">
-                <a class="navbar-brand textW" href="#">
-                    <h1 class="textW">TZI Games</h1>
-                </a>
-                <un class="nav nav-pills nav-fill">
-                    <li class="nav-item">
-                        <a href="index.html" style="text-decoration:none">
-                            <h3 class="textW">Home</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="factions.html" style="text-decoration:none">
-                            <h3 class="textW">Factions</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <h3>Learn</h3>
-                    </li>
-                    <li class="nav-item">
-                        <h3>Army Builder</h3>
-                    </li>
-                    <li class="nav-item">
-                        <h3>Extra</h3>
-                    </li>
-                </un>
-            </div>
-        </nav>
+<body>
+    <div class="alert alert-primary d-lg-none alrt" role="alert">
+        This website has been optomised for larger screens
     </div>
+    <nav class="navbar navbar-expand-lg nav-fill bg-light">
+        <div class="container-fluid nav-fill nav1 textW">
+            <a class="navbar-brand textW" href="#">
+                <h1 class="textW">TZI Games</h1>
+            </a>
+            <un class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a href="index.html" style="text-decoration:none">
+                        <h3 class="textW">Home</h3>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="factions.html" style="text-decoration:none">
+                        <h3 class="textW">Factions</h3>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <h3>Learn</h3>
+                </li>
+                <li class="nav-item">
+                    <h3>Army Builder</h3>
+                </li>
+                <li class="nav-item">
+                    <h3>About</h3>
+                </li>
+            </un>
+        </div>
+    </nav>
     <!-- End of Nav -->
     <div class="logo d-flex justify-content-center">
         <img src="Assets/main_logo.png" alt="Logo" class="logo p-7">
@@ -58,39 +57,156 @@
             <button type="button" class="btn btn-outline-primary" onclick="displayFaction('MRC')">
                 <img src="Assets/mrc.png" alt="MRC" class="faction-logo-l">
             </button>
-            <button type="button" class="btn btn-outline-primary">
-                <img src="Assets/LOD.png" alt="LOD" class="faction-logo-l">
+            <button type="button" class="btn btn-outline-primary" onclick="displayFaction('LOD')">
+                <img src="Assets/LOD.png" alt="LOD" class="faction-logo-l" >
             </button>
             <button type="button" class="btn btn-outline-primary">
-                <img src="Assets/Spinish.PNG" alt="EOC" class="faction-logo-l">
+                <img src="Assets/Spinish.PNG" alt="EOC" class="faction-logo-l" onclick="displayFaction('EOC')">
             </button>
-            <button type="button" class="btn btn-outline-primary">
+            <button type="button" class="btn btn-outline-primary" onclick="displayFaction('ROC')">
                 <img src="Assets/RoC.png" alt="ROC" class="faction-logo-l">
             </button>
         </div>
     </div>
     <div class="comments d-flex justify-content-center">
+<!-- The british are coming -->
         <div class="faction-text bac" id="BAC">
             <div class="textBox">
                 <h4>British American Colonies</h4>
                 <p>When the rift open and disrupted the war with the rebels, the British consolidated in the industrialized north. With factories and 
                     plentiful resources the grew the machines of war.</p>
-                <p>Specializing in heavy arms and armor, the British can dig and fortify any posistion.</p>
-
+                <p>What the British lack in range and movement that make up with heavy arms and armor. Their specialized Engineering Corps allows them to dig in and fortify any location, allowing the British to outlast almost any opponent.</p>
             </div>
-
+            <table class="image_table">
+                <tr>
+                    <td><img src="Assets/Bac/BAC Maj fairbanks Web1.png"  alt="MAJ Fairbanks" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/Bac/BAC Cpt loveless Web1.png"   alt="CPT Loveless" class="model_img" id="myImg">
+                    <td><img src="Assets/Bac/BAC Cpt brookwater Web1.png" alt="CPT Brookwater" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/Bac/BAC Combat Engineer  Web1.png" alt="Combat Engeneer" class="model_img" id="myImg" ></td>
+                </tr>
+                <tr>
+                    <td><img src="Assets/BAC/BAC Conscript Web1.png" alt="Conscript" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/BAC/BAC shield warden Web1.png" alt="Shield Warden" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/BAC/BAC Trench Gunner Web1.png" alt="Trench Gunner" class="model_img" id="myImg" ></td>
+                </tr>
+            </table>
         </div>
-
+<!-- THE UAT -->
         <div class="faction-text uat" id="UAT">
-            <h4>Choose your faction and fight!</h4>
-
+            <div class="textBox">
+                <h4>United American Colonies</h4>
+                <p>The war for independance never really ended. It only moved to a new front when the rifts of the damned opened.</p>
+                <p>The newly formed American government fled south. They learned a new way to fight with advanced guerrilla and hit and run tactics.</p>
+                <p>Americans specialize in fast movement and long range attacks. Their units are lightly armored to give them maximum mobility.</p>
+            </div>
+            <table class="image_table">
+                <tr>
+                    <td><img src="Assets/UAT/UAT maj thorn Web1.png"  alt="MAJ Thorn" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/UAT/UAT cpt hollister  Web1.png"   alt="CPT Hollister" class="model_img" id="myImg">
+                    <td><img src="Assets/UAT/UAT cpt marshall Web1.png" alt="CPT Marshall" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/UAT/UAT polarity trooperWeb1.png" alt="Polarity Trooper" class="model_img" id="myImg" ></td>
+                </tr>
+                <tr>
+                    <td><img src="Assets/UAT/UAT war dog Web1.png" alt="War Dog" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/UAT/UAT pistoleer Web1.png" alt="Pistoleer" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/UAT/UAT Beam Gunner  Web1.png" alt="Beam Gunner" class="model_img" id="myImg" ></td>
+                </tr>
+            </table>
         </div>
+<!-- the MRC -->
         <div class="faction-text mrc" id="MRC">
-            <h4>Choose your faction and fight!</h4>
-
+            <div class="textBox">
+                <h4>Mercenaries</h4>
+                <p>With the portals came the strange energy of the Ictus. New technologies and wepons emerged. Animals were mutated and changed.</p>
+                <p>Mercenaries are unique units that each utalize the power of the Ictus in their own way.</p>
+            </div>
+            <table class="image_table">
+                <tr>
+                    <td><img src="Assets/MRC/MRC CPT Moosaphier 1.png"   alt="CPT Moosaphier" class="model_img" id="myImg">
+                    <td><img src="Assets/MRC/MRC Assassin Web 1.png"  alt="Assassin" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/MRC/MRC Crazy Cat Lady Web1.png" alt="Crazy Cat Lady" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/MRC/MRC Dragon Chicken Web1.png" alt="Dragon Chicken" class="model_img" id="myImg" ></td>
+                </tr>
+                <tr>
+                    <td><img src="Assets/MRC/MRC Ictus Giant Web 1.png" alt="Ictus Giant" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/MRC/MRC Longbarrel Hunter-Web.png" alt="Longbarrel Hunter" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/MRC/MRC Pyromancer Web 1.png" alt="Pyromancer" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/MRC/MRC Sarah Oconnell  Web 1.png" alt="Sarah Oconnell" class="model_img" id="myImg" ></td>
+                </tr>
+                <tr>
+                    <td><img src="Assets/MRC/MRC Sister Rosa Web 1.png" alt="Sister Rosa" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/MRC/MRC Van kiel Web 1.png" alt="Van Kiel" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/MRC/MRC Zero Web 1.png" alt="Zero" class="model_img" id="myImg" ></td>
+                </tr>
+            </table>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+<!-- The LOD -->
+        <div class="faction-text lod" id="LOD">
+            <div class="textBox">
+                <h4>Legion of Damned</h4>
+                <p>When the cultists stood over the desolate battlefield the blood of hundereds opened the first portal. From it streamed the Legion of Damned</p>
+                <p>Fast, vicious and starving for the flesh of the living, the Legion lacks in tactics. Instead they swarm and swiftly tear their enemies apart.</p>
+            </div>
+            <table class="image_table">
+                <tr>
+                    <td><img src="Assets/LOD/LoD maj laaqshaahd Web1.png"   alt="MAJ Laaqshaad" class="model_img" id="myImg">
+                    <td><img src="Assets/LOD/LoD Cpt mophier Web1.png"  alt="CPT Mophier" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/LOD/LoD Cpt thresher Web1.png" alt="CPT Thresher" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/LOD/LoD Bile Belcher Web1.png" alt="Bile Belcher" class="model_img" id="myImg" ></td>
+                </tr>
+                <tr>
+                    <td><img src="Assets/LOD/LoD cultists Web1.png" alt="Cltists" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/LOD/LoD exploding zombie Web1.png" alt="Exploding Zombie" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/LOD/LoD Skeleton Archer Web1.png" alt="Skeleton Archer" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/LOD/LoD undead warrior Web1.png" alt="Undead Warrior" class="model_img" id="myImg" ></td>
+                </tr>
+            </table>
+        </div>
+<!-- The EOC             -->
+        <div class="faction-text eoc" id="EOC">
+            <div class="textBox">
+                <h4>Empire of Castiel</h4>
+                <p>As the Americans flead south they pushed out the Spanish Colonies. The Spanished fell back and reformed their South American colonies into the Empire of Castile. </p>
+                <p>Mixing ancient blood rights and modern magic, the Empire of Castile focuses on battlefield manipulation.</p>
+            </div>
+            <table class="image_table">
+                <tr>
+                    <td><img src="Assets/EoC/EoC Maj Xbalanque ah -Web.png"   alt="MAJ Xbalanque" class="model_img" id="myImg">
+                    <td><img src="Assets/EoC/EoC CPT Cortes -Web.png"  alt="CPT Cortes" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/EoC/EOC CPT Tak'ulWeb 1.png" alt="CPT Takul" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/EoC/EoC Hernan Pizarro -Web.png" alt="Pizarro" class="model_img" id="myImg" ></td>
+                </tr>
+                <tr>
+                    <td><img src="Assets/EoC/EoC Sea witch-Web.png" alt="Sea Witches" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/EoC/EoC Silverback Beserker-Web.png" alt="Silverback Beserker" class="model_img" id="myImg" ></td>
+                </tr>
+            </table>
+        </div>
+<!-- the ROC -->
+        <div class="faction-text roc" id="ROC">
+            <div class="textBox">
+                <h4>Republic of Cascadia</h4>
+                <p>Founded at the volcanic rim surrounding the magical waters of Crater Lake, the Republic of Cascadia embraces nature in all things. </p>
+                <p>The warriors for the Republic of Cascadia draw strength from the earth, providing boons or blights upon thier enemies</p>
+                <p>*please note: the figures for this faction are not completed*</p>
+            </div>
+            <table class="image_table">
+                <tr>
+                    <td><img src="Assets/RoC/RoC Maj Guiles  Web1.png"  alt="MAJ Guiles" class="model_img" id="myImg" ></td>
+                    <td><img src="Assets/RoC/RoC Cpt Summers Web1.png"   alt="CPT Summers" class="model_img" id="myImg">
+                    <td><img src="Assets/RoC/RoC Meadow lurker Web 1.png" alt="Meadow Lurker" class="model_img"  id="myImg" ></td>
+                    <td><img src="Assets/RoC/RoC Death Cap Harvester b 1.png" alt="Deathcap Harvester" class="model_img" id="myImg" ></td>
+                </tr>
+            </table>
+        </div>
+
+
+            <div id="myModal" class="modal2">
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                <img class="modal-content"  id="img01">
+            </div>
+        </div><!-- close of the tex box div-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>
